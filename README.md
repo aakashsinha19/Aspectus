@@ -1,5 +1,3 @@
-# NU302-Research-and-Development-Image-Segmentation-Tensorflow
-
 ### NU302-Research-and-Development-Image-Segmentation-Tensorflow
  Copyright (C) 2017  Aakash Sinha <aakash19developer@gmail.in>
  This program is free software: you can redistribute it and/or modify
