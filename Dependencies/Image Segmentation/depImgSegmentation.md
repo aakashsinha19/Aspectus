@@ -4,8 +4,8 @@
   2. VGG 16s Model
   3. FCN 8S Net
   4. CUDA
-  5. Scikit Image Library
-  6. Slim (Incpetion, ResNet, VGG)
+  5. PASCAL VOC 2012
+  6. Scikit Image Library
   7. NumPy
   8. MatPlotLib
   9. Language - Python 2.7
