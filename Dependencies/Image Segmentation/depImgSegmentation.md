@@ -3,7 +3,6 @@
   1. Tensorflow 0.12
   2. VGG 16s Model
   3. FCN 8S Net
-  4. PASCAL VOC 2012
   4. CUDA
   5. Scikit Image Library
   6. Slim (Incpetion, ResNet, VGG)
