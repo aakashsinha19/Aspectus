@@ -1,4 +1,4 @@
-# Dependencies used for performing Image Classification
+# Dependencies used for performing Image Segmentation
 
   1. Tensorflow 0.12
   2. VGG 16s Model
