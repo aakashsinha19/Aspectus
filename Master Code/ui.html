@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Amatica+SC' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+    <title>Twitter Sentiment Analysis</title>
+
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .bg {
+        background-image: url("assets/elephant.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-family: 'Calibri';
+        font-size: 100px;
+        color: #1DA1F4;
+        opacity: 0.9;
+        position: relative;
+        top: 70px;
+    }
+
+    .query{
+        opacity: 0.8;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        font-family: 'BenchNine', sans-serif;
+    }
+    .button{
+        opacity: 0.9;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        font-family: 'BenchNine', sans-serif;
+    }
+    a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    a:active {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .nav{
+        width:40px;
+        height:40px;
+        border-radius:40%;
+        position:relative;
+        padding:10px;
+        top:375px;
+        left:42%;
+    }
+
+    a img:hover{
+        box-shadow: 1px 6px 20px 0 rgba(0, 0, 0, 1);
+    }
+    </style>
+
+
+</head>
+<body>
+    <div class="bg">
+        
+        <form>
+        <p class="header">Team Aspectus</p>
+        <input type="text" id = "userInput" class="query" placeholder="Upload your Image Here" >
+        <input type="submit" class="button" onclick = "httpGet()" value="Generate!">
+        </form>
+
+    <footer>
+        <nav>
+           <a href="https://twitter.com/the19thcomet" target="_blank">
+              <img src="assets/twitterlogo.png" alt="twitter" class="nav box">
+           </a>
+
+           <a href="https://github.com/aakashsinha19" target="_blank">
+            <img src="assets/github.png" alt="github" class="nav box">
+           </a>
+
+           <a href="https://www.facebook.com/aakash.sinha.001" target="_blank">
+            <img src="assets/facebook.png" alt="facebook" class="nav box">
+          </a>
+        </nav>
+    </footer>
+
+    </div>
+
+</body>
+<script>
+
+function httpGet()
+{
+    var q = document.getElementById('userInput').value;
+    console.log(q);
+    theUrl = "http://0.0.0.0:8080/?q="+q;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    console.log(xmlHttp.responseText);
+}
+
+
+</script>
+</html>
