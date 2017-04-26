@@ -1,15 +1,14 @@
-### Aspectus
- Copyright (C) 2017  Aakash Sinha <aakash19developer@gmail.in>
- Credits : @warmspringwinds
- This program is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, either version 3 of the License, or
- any later version.
-
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>
+# Aspectus
+ ## Copyright (C) 2017  Aakash Sinha <aakash19developer@gmail.in>
+ ## Credits : @warmspringwinds
+ 
+#### We   will   be   performing   image   segmentaion   on   a   given   image.   The   machine 
+#### learning   library   which   we   are   using   is   TensorFlow.   In   the   first   phase   we   used   Slim 
+#### wrapper   and   VGG‐16   model   to   classify   an   image   in   over   1000   classes   and   give 
+#### significant   probabilities   using   Softmax.   In   the   second   phase   we   have   trained 
+#### FCN‐8s   net   on   VGG‐16   and   it   has   used   PASCAL   VOC   2012   model   (trained   on 
+#### ImageNet   to   generate   21   classes)   to   generate   classes.   Then   we   have   used   CRF   as 
+#### recursive   function   (in   RNN)   to   generate   a   heat   map   of   the   obtained   foreground 
+#### which   have   been   classified.   Then   we   have   used   morphological   operations   on   the 
+#### image   to   detect   contour   and   masking   to   retrieve   the   final   output   image.   Then   we 
+#### have   extended   our   project   by   making   custom   stickers   for   Telegram   ChatBox.  
