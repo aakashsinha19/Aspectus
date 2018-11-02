@@ -1,5 +1,5 @@
 # Aspectus
- ## Copyright (C) 2017  Aakash Sinha <aakash19developer@gmail.in>
+ ## Copyright (C) 2017  Aakash Sinha <aakash19sinha@gmail.in>
  ## Credits : @warmspringwinds
  
 #### We   will   be   performing   image   segmentaion   on   a   given   image.   The   machine 
